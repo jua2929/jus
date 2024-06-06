@@ -1,0 +1,78 @@
+ *{             /* css 파일에서 *표시는 연결된 html 파일의 모든 요소를 선택한다는 뜻 */
+    margin: 0;  /*바깥쪽 여백 */
+    padding: 0;  /*안쪽 여백 */
+    line-height: 1; /*행간 */
+    box-sizing: border-box;
+ }
+
+#flex {
+    padding-left: 40px;
+    background-color: rgb(255,255,255);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.item-flex {
+    background-color: rgb(255,255,255);
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(0,0,0);
+    overflow-y: visible;
+}
+.item-flex{
+    align-self: flex-start;   /*움직이고 싶은 상자를 움직일 수 있음*/
+}
+
+@media screen and (max-width:1500px) {    /*screen media를 사용할게요, 1000px 이내의 스크린이 된다면~*/
+    #flex{
+        background-color: rgb(255,255,255);
+        grid-template-columns: repeat(2,1fr);  /*스크린 가로가 1000px보다 작아지면 1fr이 두번 반복되고 배경 색 바뀜*/
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {    /*screen media를 사용할게요, 1000px 이내의 스크린이 된다면~*/
+    #flex{
+        background-color: rgb(3,131,111);
+        grid-template-columns: repeat(2,1fr);  /*스크린 가로가 1000px보다 작아지면 1fr이 두번 반복되고 배경 색 바뀜*/
+        padding-left: 20px;
+    }
+ }
+
+@media screen and (max-width:1000px) {    /*screen media를 사용할게요, 1000px 이내의 스크린이 된다면~*/
+    #flex{
+        background-color: rgb(0,200,250);
+        grid-template-columns: repeat(2,1fr);  /*스크린 가로가 1000px보다 작아지면 1fr이 두번 반복되고 배경 색 바뀜*/
+        padding-left: 20px;
+    }
+ }
+
+ @media screen and (max-width:950px) {    /*screen media를 사용할게요, 1000px 이내의 스크린이 된다면~*/
+    #flex{
+        background-color: rgb(204, 176, 157);
+        grid-template-columns: repeat(2,1fr);  /*스크린 가로가 1000px보다 작아지면 1fr이 두번 반복되고 배경 색 바뀜*/
+        padding-left: 20px;
+    }
+ }
+
+ @media screen and (max-width:900px) {    /*screen media를 사용할게요, 1000px 이내의 스크린이 된다면~*/
+    #flex{
+        background-image: url(https://ifh.cc/g/xLY6XM.jpg);
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 10px;
+    }
+ }
+
+ @media screen and (max-width:870px) {    /*screen media를 사용할게요, 1000px 이내의 스크린이 된다면~*/
+    #flex{
+        background-image: url(https://ifh.cc/g/Zyx0tj.jpg);
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 10px;
+    }
+ }
+
